@@ -6,42 +6,30 @@
         "use": "@vercel/static"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
-        "src": "/",
-        "dest": "/src/index.html"
+        "source": "/",
+        "destination": "/src/index.html"
       },
       {
-        "src": "/index.html",
-        "dest": "/src/index.html"
+        "source": "/index.html",
+        "destination": "/src/index.html"
       },
       {
-        "src": "/news.html",
-        "dest": "/src/news.html"
+        "source": "/news.html",
+        "destination": "/src/news.html"
       },
       {
-        "src": "/login.html",
-        "dest": "/src/login.html"
+        "source": "/login.html",
+        "destination": "/src/login.html"
       },
       {
-        "src": "/foto-video.html",
-        "dest": "/src/foto-video.html"
+        "source": "/foto-video.html",
+        "destination": "/src/foto-video.html"
       },
       {
-        "src": "/sitemap.html",
-        "dest": "/src/sitemap.html"
-      },
-      {
-        "src": "/img/(.*)",
-        "dest": "/img/$1"
-      },
-      {
-        "src": "/(.*)\\.css",
-        "dest": "/src/$1.css"
-      },
-      {
-        "src": "/(.*)\\.js",
-        "dest": "/src/$1.js"
+        "source": "/sitemap.html",
+        "destination": "/src/sitemap.html"
       }
     ],
     "cleanUrls": true,
