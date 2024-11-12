@@ -1,5 +1,17 @@
 {
+    "version": 2,
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      { 
+        "source": "/(.*)",
+        "destination": "/src/$1"
+      },
+      {
+        "source": "/",
+        "destination": "/src/index.html"
+      },
+      {
+        "source": "/img/(.*)",
+        "destination": "/img/$1"
+      }
     ]
   }
