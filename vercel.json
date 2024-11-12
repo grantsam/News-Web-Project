@@ -1,37 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "**",
-        "use": "@vercel/static"
-      }
-    ],
     "rewrites": [
-      {
-        "source": "/",
-        "destination": "/src/index.html"
-      },
-      {
-        "source": "/index.html",
-        "destination": "/src/index.html"
-      },
-      {
-        "source": "/news.html",
-        "destination": "/src/news.html"
-      },
-      {
-        "source": "/login.html",
-        "destination": "/src/login.html"
-      },
-      {
-        "source": "/foto-video.html",
-        "destination": "/src/foto-video.html"
-      },
-      {
-        "source": "/sitemap.html",
-        "destination": "/src/sitemap.html"
-      }
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false
+      { "source": "/(.*)", "destination": "/" }
+    ]
   }
