@@ -14,6 +14,24 @@ const sampleUsers = [
     }
 ];
 
+// Function to display users
+function displayUsers(users) {
+    const userList = document.getElementById('userList');
+    users.forEach(user => {
+        const userItem = document.createElement('div');
+        userItem.className = 'list-group-item list-group-item-action';
+        userItem.innerHTML = `
+            <h5>${user.name} (${user.role})</h5>
+            <p>Email: ${user.email}</p>
+            <p>Password: ${user.password}</p>
+        `;
+        userList.appendChild(userItem);
+    });
+}
+
+// Call the function to display users
+displayUsers(sampleUsers);
+
 // Function to validate email format
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
