@@ -112,11 +112,11 @@ function handleLogin(event) {
         // Redirect after short delay using window.location.replace
         setTimeout(() => {
             try {
-                window.location.href('./src/index.html');
+                window.location.href('index.html');
             } catch (error) {
                 console.error('Redirect error:', error);
                 // Fallback redirect
-                window.location.href = './src/login.html';
+                window.location.href = 'login.html';
             }
         }, 1500);
     } else {
